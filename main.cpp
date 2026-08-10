@@ -3,6 +3,11 @@ using namespace std;
 
 int main()
 {
-    cout<< "Hello world";
+    cout<< "\nHello world";
+    cout<< "\nlets go";
+    //a comment
+    /*
+    a big 
+    comment*/
     return 0;
 }

@@ -1,16 +1,27 @@
 #include <iostream>
+
 using namespace std;
+namespace first{
+    int x = 1;
+}
+namespace second{
+    int x = 2;
+}
 
 int main()
 {
     // Print outs
+    std::cout << second::x<<"\n";
     cout<< "Hello world"<< '\n';
-    cout<< "lets go";
+    cout<< "lets go\n";
 
     // int, float and double variables
     int x = 5;
     float y = 6.208;
     double sum = x+y;
+    using namespace first;
+    using namespace second;
+    cout<< x;
     cout <<"\nthis is the sum "<<sum;
     
     //Chatacter and string

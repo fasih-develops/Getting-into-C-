@@ -24,6 +24,17 @@ int main()
     //b/=3;
     float remainder = b%3;
     cout << remainder;
+
+    //Operator precedence in C++
+    int sol = (9)*8+5/5+16-9;
+    cout<<'\n'<< sol;
+
+    //Implicit and explicit datatype conversion
+    char x = 100;
+    double bi = (int) 3.14;
+    cout<< '\n'<< x;
+    cout<< '\n'<< bi;
+
 }
 
 

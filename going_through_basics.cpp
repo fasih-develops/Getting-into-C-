@@ -36,12 +36,10 @@ int main()
     cout<< '\n'<< x;
     cout<< '\n'<< bi;
     */
-    std::string x;
-    cout << "Enter your name brov";
+    double x;
+    cout << "enter your marks obtained : ";
     cin >> x;
-    cout << "your name is :"<< x;
+    double percentage = x/510 *100;
+    cout << "your percentage is: " << percentage;
 
 }
-
-
-

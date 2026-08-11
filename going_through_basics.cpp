@@ -2,12 +2,14 @@
 #include <vector>
 
 using namespace std;
+/*
 // creating an alias for a data type
 typedef std::vector<std::pair<std::string, int>> call;
 typedef std::string ors;
 //typedef is an old C++ keyword used to create an alias(another name) for an existing keyword
 using u = int;
 // using is a keyword used to create another name for an existing data type
+*/
 int main()
 {
     /*
@@ -39,7 +41,11 @@ int main()
     double x;
     cout << "enter your marks obtained : ";
     cin >> x;
+    string name;
+    getline(cin,name);
+    
     double percentage = x/510 *100;
     cout << "your percentage is: " << percentage;
+    cout << "\nyour name is " << name;
 
 }

@@ -10,6 +10,7 @@ using u = int;
 // using is a keyword used to create another name for an existing data type
 int main()
 {
+    /*
     ors champ = "jkfdkj";
     cout<< "lests go " << champ << '\n';
     u b = 20;
@@ -34,6 +35,11 @@ int main()
     double bi = (int) 3.14;
     cout<< '\n'<< x;
     cout<< '\n'<< bi;
+    */
+    std::string x;
+    cout << "Enter your name brov";
+    cin >> x;
+    cout << "your name is :"<< x;
 
 }
 

@@ -38,6 +38,7 @@ int main()
     cout<< '\n'<< x;
     cout<< '\n'<< bi;
     */
+   
     double x;
     string name;
     cout<< "enter your Marks of Matriculation : ";

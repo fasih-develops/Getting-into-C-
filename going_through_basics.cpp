@@ -42,7 +42,7 @@ int main()
     cout << "enter your marks obtained : ";
     cin >> x;
     string name;
-    getline(cin,name);
+    getline(cin >> ws,name);
     
     double percentage = x/510 *100;
     cout << "your percentage is: " << percentage;

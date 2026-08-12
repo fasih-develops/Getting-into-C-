@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <math>
 
 using namespace std;
 /*
@@ -37,16 +38,19 @@ int main()
     double bi = (int) 3.14;
     cout<< '\n'<< x;
     cout<< '\n'<< bi;
-    */
-   
+    
+
+    // at first if we write this code it would only take marks for input and skip the name but after using >>ws it was solved 
     double x;
     string name;
     cout<< "enter your Marks of Matriculation : ";
     cin>> x;
     cout<< "enter your full name : ";
     getline(cin>>ws ,name);
-
+    
     cout << "your name is : " << name << " your marks are : "<< x;
+    */
+    
 
 
 

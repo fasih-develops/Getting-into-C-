@@ -39,14 +39,14 @@ int main()
     cout<< '\n'<< bi;
     */
     double x;
-    cout << "enter your marks obtained : ";
-    cin >> x;
-    cout << "enter your name : ";
     string name;
-    getline(cin>> ws,name);
-    
-    double percentage = x/510 *100;
-    cout << "your percentage is: " << percentage;
-    cout << "\nyour name is " << name;
+    cout<< "enter your Marks of Matriculation : ";
+    cin>> x;
+    cout<< "enter your full name : ";
+    getline(cin>>ws ,name);
+
+    cout << "your name is : " << name << " your marks are : "<< x;
+
+
 
 }

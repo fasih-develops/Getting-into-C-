@@ -41,6 +41,7 @@ int main()
     double x;
     cout << "enter your marks obtained : ";
     cin >> x;
+    cout << "enter your name : ";
     string name;
     getline(cin>> ws,name);
     

@@ -15,4 +15,7 @@ int main()
     else{
         cout<< "how did you reached us bro";
     }
+    int y;
+    
+    
 }

@@ -80,9 +80,12 @@ int main()
         break;
      }
     cout<< "\n****************Closing Calculator*****************"   ; 
-    */
+    
     int x;
     cout<< "\nEnter your value ";
     cin>> x;
     x == 1 ? cout<< "its one": cout<< "its another one";
+    */
+
+    
 }   

@@ -26,8 +26,8 @@ int main()
     case '/':
         cout << "Here is the division " << x/y;
         break;
-     default:
-        cout <<"Invalid input ";
+    default:
+        cout <<"Invalid input! ";
         break;
      }
     cout<< "\n****************Closing Calculator*****************"   ; 

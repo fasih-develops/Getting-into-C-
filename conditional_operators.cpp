@@ -16,6 +16,7 @@ int main()
     else{
         cout<< "how did you reached us bro";
     }
+
     int y;
     cout<< "\nEnter the day of the week :";
     cin>> y;
@@ -50,7 +51,7 @@ int main()
         break;
     
     }
-    */
+    
     double x,y,z;
     char opr;
     cout<< "****************Calculator****************";
@@ -79,4 +80,9 @@ int main()
         break;
      }
     cout<< "\n****************Closing Calculator*****************"   ; 
-}
+    */
+    int x;
+    cout<< "\nEnter your value ";
+    cin>> x;
+    x == 1 ? cout<< "its one": cout<< "its another one";
+}   

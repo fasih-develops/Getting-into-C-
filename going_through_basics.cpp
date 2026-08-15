@@ -99,8 +99,18 @@ int main()
     } while (x<0);
     cout<<"your number is "<< x;
     */
+    //break and continue statement 
     for(int i=1;i<10;i++){
-        cout<< "lets go\n";
+        if(i==8){
+            continue;;
+        }
+        cout<< "\n lets go "<< i;
+    }
+    for(int i=1;i<10;i++){
+        if(i==8){
+            break;;;
+        }
+        cout<< "\n lets go "<< i;
     }
     
 }

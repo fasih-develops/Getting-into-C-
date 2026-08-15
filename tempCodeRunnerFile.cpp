@@ -99,8 +99,8 @@ int main()
     } while (x<0);
     cout<<"your number is "<< x;
     */
-    for(int i=1;i<10;i++){
-        cout<< "lets go\n";
-    }
+    for (int i = 0; i < 9; i++){
+        cout<< "les go"
+    };
     
 }

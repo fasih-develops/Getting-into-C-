@@ -63,7 +63,7 @@ int main()
     else{
         cout<< "\nAyo wassup "<< name;
     }
-    */
+    
     string name;
     cout<< "enter your name conjusted in lowercase boss : ";
     getline(cin,name);
@@ -72,15 +72,29 @@ int main()
     //cout<<name.at(0);
     //cout << name.insert(0,"$");
     //name.erase(0,2);
-    /*
+
     while (name.empty())
     {
         cout<< "Why didn't you entered your name";
         cout<< "\nenter your name";
         getline(cin,name);
     }
-    */
     
+    int num;
+    while(num<0){
+        cout<< "enter a positive number : ";
+        cin>> num;
+    }
+    cout<< "your number is : "<< num;
+    //this code fails until we don't write some extra lines of code
+    */
+    int x;
+    do
+    {
+        cout<<"Enter a # :";
+        cin>> x;
+    } while (x<0);
+    cout<<"your number is "<< x;
     
     
 

@@ -49,9 +49,39 @@ int main()
     getline(cin>>ws ,name);
     
     cout << "your name is : " << name << " your marks are : "<< x;
+    
+    if(name.length() > 12){
+        cout<< "Your name is more in characters than 12 ";
+
+    }
+    else{
+        cout<< "Hello " << name;
+    }
+    if(name.empty()){
+        cout<< "you didn't entered your name! ";
+    }
+    else{
+        cout<< "\nAyo wassup "<< name;
+    }
+    */
+    string name;
+    cout<< "enter your name conjusted in lowercase boss : ";
+    getline(cin,name);
+    //name.clear();
+    //name.append("@gmail.com");
+    //cout<<name.at(0);
+    //cout << name.insert(0,"$");
+    //name.erase(0,2);
+    /*
+    while (name.empty())
+    {
+        cout<< "Why didn't you entered your name";
+        cout<< "\nenter your name";
+        getline(cin,name);
+    }
     */
     
-
-
+    
+    
 
 }

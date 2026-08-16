@@ -1,4 +1,5 @@
 #include <iostream>
+#include <ctime>
 using namespace std;
 int main()
 {
@@ -36,5 +37,7 @@ int main()
         cout << endl;
     }
     */
-    
+    srand(time(NULL));
+    int num = rand() % 6 +1;
+    cout<< num<< "⚡️";
 }

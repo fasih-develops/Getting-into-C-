@@ -38,6 +38,6 @@ int main()
     }
     */
     srand(time(NULL));
-    int num = rand() % 6 +1;
-    cout<< num<< "⚡️";
+    int num = rand() %100 +1;
+    cout<< num;
 }

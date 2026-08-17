@@ -37,7 +37,5 @@ int main()
         cout << endl;
     }
     */
-    srand(time(NULL));
-    int num = rand() %100 +1;
-    cout<< num;
+    
 }

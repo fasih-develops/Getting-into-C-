@@ -1,6 +1,12 @@
 #include <iostream>
 #include <ctime>
 using namespace std;
+
+void happy(string boi, int age){
+    cout<< "Happy birthday to "<< boi;
+    cout<< "\nHappy birthday dear "<< boi;
+    cout<< "\nHappy "<< age << "th birthday dear "<< boi;
+}
 int main()
 {
     //Nested loops
@@ -11,7 +17,14 @@ int main()
         }
         cout<<'\n';
     }
-
+    string boi = "hellory";
+    int age = 18;
+    happy(boi,age);
+    // function = a block of reusable code
+    // void means returns nothing
+    string boi = "hellory";
+    int age = 18;
+    happy(boi,age);
 
     //practicing
     /*

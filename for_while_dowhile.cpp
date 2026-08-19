@@ -6,6 +6,10 @@ using namespace std;
 
 int main()
 {
+    //for loop
+    for (int i = 0; i < 9; i++){
+        cout<< "les go"
+    };
     //Nested loops
    
     for(int i=5;i>=1;i--){
@@ -15,6 +19,7 @@ int main()
         cout<<'\n';
     }
     
+    //do while
     int o;
     do
     {
@@ -35,6 +40,7 @@ int main()
     cout<< "enter an even number: ";
     cin>> p;
 
+    //while
     while (p % 2 != 0)
     {
         cout<< "enter an even number: ";

@@ -6,6 +6,10 @@ void happy(string boi, int age){
     cout<< "Happy birthday to "<< boi;
     cout<< "\nHappy birthday dear "<< boi;
     cout<< "\nHappy "<< age << "th birthday dear "<< boi;
+
+double cube(double length){
+    return length*length*length;
+}
 }
 int main()
 {
@@ -17,15 +21,17 @@ int main()
         }
         cout<<'\n';
     }
-    string boi = "hellory";
-    int age = 18;
-    happy(boi,age);
     // function = a block of reusable code
     // void means returns nothing
     string boi = "hellory";
     int age = 18;
     happy(boi,age);
 
+    // to return a double we use double as a function
+    double length = 5;
+    double volume = cube(length);
+    cout<< "here is the volume "<< volume;
+    return 0;
     //practicing
     /*
     int x,y;

@@ -91,13 +91,7 @@ int main()
     cout<< "your number is : "<< num;
     //this code fails until we don't write some extra lines of code
     
-    int x;
-    do
-    {
-        cout<<"Enter a # :";
-        cin>> x;
-    } while (x<0);
-    cout<<"your number is "<< x;
+    
     */
     //break and continue statement 
     for(int i=1;i<10;i++){

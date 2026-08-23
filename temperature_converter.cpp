@@ -18,7 +18,7 @@ int main()
     else if(unit == 'c' || unit == 'C'){
         cout<< "\nEnter the temperature in Fahrenheit : ";
         cin>> temp;
-        temp = (temp/1.8)- 32.0;
+        temp = (temp-32.0)/1.8;
         cout<< "Here is temperature in C :" << temp << "C";
     }
     else{

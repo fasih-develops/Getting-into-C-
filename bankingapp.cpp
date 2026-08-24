@@ -20,7 +20,7 @@ int main()
         cout<<"\n Enter your choice : ";
         cin>>choice;
         cin.clear();
-        fflush(stdin);
+        
         switch (choice)
         {
         case 1: showbalance(balance);
@@ -40,7 +40,9 @@ int main()
     cout<<"\n**************************************";
 }
 void showbalance(double balance){
-    cout<<"Your balance is $"<<setprecision(2) <<fixed<< balance<< '\n';
+    cout<<"\nYour balance is $";
+    cout<<setprecision(2);
+    cout<<fixed<< balance<< '\n';
 }
 double withdraw(double balance){
     double amount = 0;
@@ -51,9 +53,11 @@ double withdraw(double balance){
         cout<<"Insufficent balance\n";
         return 0;
     }
-    else
-    {
-        balance-=amount;
+    else if(amount <= 0){
+        cout<<"Invalid amount: ";
+        return 0;
+    }
+    else{
         return amount;
     }
     
@@ -61,7 +65,7 @@ double withdraw(double balance){
 }
 double deposit(){
     double amount;
-    cout<<"Enter amount to deposit: ";
+    cout<<"Enter amount to be deposited: ";
     cin>>amount;
     if(amount>0){
         return amount;

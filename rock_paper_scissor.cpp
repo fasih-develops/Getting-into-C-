@@ -9,8 +9,14 @@ using namespace std;
 int main()
 {
     char player;
+    player = getuserchoice();
+    
+
+}
+char getuserchoice(){
     do
     {
+        char player;
         cout<<"Rock , Paper , Scissor game! \n";
         cout<<"**************************";
         cout<<"\n \'r\' for rock";
@@ -18,12 +24,7 @@ int main()
         cout<<"\n \'s\' for scissor";
         cout<<"\nEnter your choice: ";
         cin>> player;
-    } while (player != 'r' && player != 'p' && player != 's');
-    
-    
-
-}
-char getuserchoice(){
+    }while(player != 'r' && player != 'p' && player != 's');
     return 0;
 }
 char getcomputerchioce(){

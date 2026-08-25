@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-    double x,y,z;
+    double x,y;
     char opr;
     cout<< "****************Calculator****************";
     cout<< "\nEnter your 1st number: ";
@@ -29,6 +29,6 @@ int main()
     default:
         cout <<"Invalid input! ";
         break;
-     }
+    }
     cout<< "\n****************Closing Calculator*****************"   ; 
 }

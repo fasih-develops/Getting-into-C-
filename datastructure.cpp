@@ -2,7 +2,7 @@
 
 using namespace std;
 double gettotal(double prices[],int size);
-
+int searcharray(int array[],int sizej, int element);
 int main()
 {
     // Array is a data structure that can hold multiple values 
@@ -54,8 +54,21 @@ int main()
     int size = sizeof(prices)/sizeof(prices[0]);
     double total = gettotal(prices,size);
     cout<<'\n'<<"$"<<total;
-    return 0;
+    
 
+    // searching for a specific integer in a given array using simple for loop condition sizeof operator and function
+
+    int index,mynum,sizej;
+    int nums[] = {1,2,3,4,5,6,7,8,9,10};
+    sizej = sizeof(nums)/sizeof(nums[0]);
+    cout<<"\nEnter a number to search for in the given array 1-10: ";
+    cin>>mynum;
+    index = searcharray(nums,sizej,mynum);
+    if(index!=-1){
+        cout<<"\nYour number "<<mynum<<" was found at the index: "<<index;
+    }else{
+        cout<<"\nYour number wasn't found in the given array ";
+    }
 }
 double gettotal(double prices[], int size){
     double total = 0;
@@ -63,4 +76,13 @@ double gettotal(double prices[], int size){
         total += prices[i];
     }
     return total;
+}
+int searcharray(int array[],int sizej, int element){
+    for(int i = 0;i<sizej;i++){
+        if(array[i]==element){
+            return i;
+        }
+            
+    }
+    return -1;
 }

@@ -1,13 +1,15 @@
 #include <iostream>
 
 using namespace std;
+/* 
 double gettotal(double prices[],int size);
 int searcharray(int array[],int sizej, int element);
-void sortarray(int numss[],int sizek);
+void sortarray(int numss[],int sizek);*/
 int main()
 {
     // Array is a data structure that can hold multiple values 
 
+    /*
     // We declare an array and assign them strings and doubles and different data types
     double num = 4;                   // 8 bytes of memory
     char chr1 = 'a';                  // char is gets stroed into 1 byte
@@ -92,10 +94,21 @@ int main()
     for(string element:foods){
         cout<<'\n'<<element;
     }
+    */
 
+    // Filling an array by taking inputs from the user
+    string bmwss[5];
+    int size = sizeof(bmwss)/sizeof(bmwss[0]);
 
-
-}
+    for(int i=0;i<size;i++){
+        cout<<"Enter your bmws M model: ";
+        getline(cin,bmwss[i]);
+    }
+    cout<<"\nYour favourite bmwss: ";
+    for(string element: bmwss){
+        cout<<'\n'<<element;
+    }
+}/*
 double gettotal(double prices[], int size){
     double total = 0;
     for(int i = 0; i<size;i++){
@@ -124,3 +137,4 @@ void sortarray(int numss[],int sizek){
         }
     }
 }
+*/

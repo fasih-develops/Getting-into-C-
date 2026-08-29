@@ -3,7 +3,7 @@
 using namespace std;
 double gettotal(double prices[],int size);
 int searcharray(int array[],int sizej, int element);
-void sortarray(int nums[],int size);
+void sortarray(int numss[],int sizek);
 int main()
 {
     // Array is a data structure that can hold multiple values 
@@ -73,13 +73,25 @@ int main()
 
     // sorting an array through using bubble sort algorithm
     
-    int nums[] = {7,3,4,6,8,9,10,2,1,5};
-    int size = sizeof(nums)/sizeof(nums[0]);
-    sortarray(nums,size);
+    int numss[] = {7,3,4,6,8,9,10,2,1,5};
+    int sizek = sizeof(numss)/sizeof(numss[0]);
+    sortarray(numss,sizek);
+    cout<<'\n';
 
+
+    //fill() is used to fill a range of values with a specified value
+    //syntax fill(bagin,end,value)
     for(int element: nums){
         cout<<element<<" ";
     }     
+    int sizel = 99;
+    string foods[sizel];
+    fill(foods,foods+sizel/3,"Chamba");
+    fill(foods+sizel/3,foods+(sizel/3)*2,"lapat");
+    fill(foods+(sizel/3)*2,foods+sizel,"chaplak");
+    for(string element:foods){
+        cout<<'\n'<<element;
+    }
 
 
 
@@ -100,14 +112,14 @@ int searcharray(int array[],int sizej, int element){
     }
     return -1;
 }
-void sortarray(int nums[],int size){
+void sortarray(int numss[],int sizek){
     int temp;
-    for(int i =0;i<size-1;i++){
-        for(int j=0;j<size-1;j++){
-            if(nums[j]>nums[j+1]){
-                temp=nums[j];
-                nums[j]=nums[j+1];
-                nums[j+1]=temp;
+    for(int i =0;i<sizek-1;i++){
+        for(int j=0;j<sizek-1;j++){
+            if(numss[j]>numss[j+1]){
+                temp=numss[j];
+                numss[j]=numss[j+1];
+                numss[j+1]=temp;
             }
         }
     }

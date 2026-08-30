@@ -94,7 +94,7 @@ int main()
     for(string element:foods){
         cout<<'\n'<<element;
     }
-    */
+    
 
     // Filling an array by taking inputs from the user
     string bmwss[5];
@@ -107,6 +107,25 @@ int main()
     cout<<"\nYour favourite bmwss: ";
     for(string element: bmwss){
         cout<<'\n'<<element;
+    }*/
+
+    //
+    string foods[5];
+    int sizef = sizeof(foods)/sizeof(foods[0]);
+    for(int i = 0;i<sizef;i++){
+        string temp;
+        cout<<"Enter your favouite food #"<<i+1;
+        getline(cin,temp);
+        if(temp == "q"){
+            cout<<"\nGoodbye!";
+            break;
+        }else{
+            foods[i] = temp;
+        }
+    }
+    cout<< "\nHere are the Your favouite foods";
+    for(string food: foods){
+        cout<<"\n"<<food;
     }
 }/*
 double gettotal(double prices[], int size){

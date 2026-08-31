@@ -109,23 +109,36 @@ int main()
         cout<<'\n'<<element;
     }*/
 
-    //
+    //Taking strings from the user and printing out the output without the space prob
     string foods[5];
     int sizef = sizeof(foods)/sizeof(foods[0]);
     for(int i = 0;i<sizef;i++){
         string temp;
-        cout<<"Enter your favouite food #"<<i+1;
+        cout<<"Enter your favouite food #"<<i+1<<": ";
         getline(cin,temp);
         if(temp == "q"){
-            cout<<"\nGoodbye!";
+            cout<<"Goodbye!\n";
             break;
         }else{
             foods[i] = temp;
         }
     }
-    cout<< "\nHere are the Your favouite foods";
-    for(string food: foods){
-        cout<<"\n"<<food;
+    cout<< "Here are the Your favouite foods";
+    for(int i =0; !foods[i].empty();i++){
+        cout<<'\n'<<foods[i];
+    }
+    
+    // Introducing Two dimentional arrays 
+    string array2d[][3] = {
+        {"Aiza","Ahmed","sultan"},
+        {"lala","kaki","Mishcat"},
+        {"Muzammil","Amina","Adi"}
+    };
+
+    for(int i = 0;i<3;i++){
+        for(int j = 0;j<3;j++){
+            cout<<'\n'<<array2d[i][j];
+        }
     }
 }/*
 double gettotal(double prices[], int size){

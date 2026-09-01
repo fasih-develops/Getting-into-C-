@@ -107,7 +107,7 @@ int main()
     cout<<"\nYour favourite bmwss: ";
     for(string element: bmwss){
         cout<<'\n'<<element;
-    }*/
+    }
 
     //Taking strings from the user and printing out the output without the space prob
     string foods[5];
@@ -126,7 +126,7 @@ int main()
     cout<< "Here are the Your favouite foods";
     for(int i =0; !foods[i].empty();i++){
         cout<<'\n'<<foods[i];
-    }
+    }*/
     
     // Introducing Two dimentional arrays 
     string array2d[][3] = {
@@ -134,11 +134,15 @@ int main()
         {"lala","kaki","Mishcat"},
         {"Muzammil","Amina","Adi"}
     };
+    int sizep = sizeof(array2d)/sizeof(array2d[0]);
+    int sizek = sizeof(array2d[0])/sizeof(array2d[0][0]);             
+    cout<<sizek;
 
     for(int i = 0;i<3;i++){
         for(int j = 0;j<3;j++){
-            cout<<'\n'<<array2d[i][j];
+            cout<<' '<<array2d[i][j];
         }
+        cout<<"\n";
     }
 }/*
 double gettotal(double prices[], int size){

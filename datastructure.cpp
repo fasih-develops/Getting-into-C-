@@ -1,15 +1,15 @@
 #include <iostream>
 
 using namespace std;
-/* 
+ 
 double gettotal(double prices[],int size);
 int searcharray(int array[],int sizej, int element);
-void sortarray(int numss[],int sizek);*/
+void sortarray(int numss[],int sizek);
 int main()
 {
     // Array is a data structure that can hold multiple values 
 
-    /*
+    
     // We declare an array and assign them strings and doubles and different data types
     double num = 4;                   // 8 bytes of memory
     char chr1 = 'a';                  // char is gets stroed into 1 byte
@@ -126,7 +126,7 @@ int main()
     cout<< "Here are the Your favouite foods";
     for(int i =0; !foods[i].empty();i++){
         cout<<'\n'<<foods[i];
-    }*/
+    }
     
     // Introducing Two dimentional arrays 
     string array2d[][3] = {
@@ -135,7 +135,7 @@ int main()
         {"Muzammil","Amina","Adi"}
     };
     int sizep = sizeof(array2d)/sizeof(array2d[0]);
-    int sizek = sizeof(array2d[0])/sizeof(array2d[0][0]);             
+    int sizeo = sizeof(array2d[0])/sizeof(array2d[0][0]);             
     cout<<sizek;
 
     for(int i = 0;i<3;i++){
@@ -144,7 +144,7 @@ int main()
         }
         cout<<"\n";
     }
-}/*
+}
 double gettotal(double prices[], int size){
     double total = 0;
     for(int i = 0; i<size;i++){
@@ -173,4 +173,3 @@ void sortarray(int numss[],int sizek){
         }
     }
 }
-*/

@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cctype>
 using namespace std;
 int main()
 {
@@ -43,6 +44,12 @@ int main()
         }
         
     }
-    cout<<"Your score is : "<<score;
-    
+    cout<<"# of questions: "<<size;
+    cout<<"\nYour score is : "<<score;
+    cout<<"\nScore percentage: "<< (score/(double)size)*100<<"%";
+    cout << "\n\nPress Enter to exit...";
+    cin.ignore();
+    cin.get();
+
+return 0;
 }

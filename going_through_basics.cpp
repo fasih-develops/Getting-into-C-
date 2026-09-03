@@ -109,5 +109,10 @@ int main()
     
     */
    
-    
+    // a Memory address is a location in memory where data is stored
+    // & is used to access memory addresss called address of operator
+
+    std::string bhai = "Bhaiyyah vastaganahuiyya! ";
+    std::cout<<&bhai;
+
 }

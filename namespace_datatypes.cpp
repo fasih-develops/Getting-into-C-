@@ -8,14 +8,19 @@ namespace first{
 namespace second{
     int x = 2;
 }
+namespace third{
+    int x = 3;
+}
 
 int main()
 {
 
-    // Print outs
+    // Print outs of x from different namespace declarations
+    std::cout << first::x<<"\n";
     std::cout << second::x<<"\n";
+    std::cout << third::x<<"\n";
     cout<< "Hello world"<< '\n';
-    cout<< "lets go\n";
+    std::cout<< "lets go\n";
 
     // int, float and double variables
     int x = 5;

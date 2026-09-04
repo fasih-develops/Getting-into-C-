@@ -3,9 +3,9 @@
 using namespace std;
 int main()
 {
-    srand(time(0));
+    srand(time(NULL));
     int num,tries,guess;
-    num = rand() % 101;
+    num = (rand() % 100)+1;
     tries = 0;
     cout<<"********************Number Guessing game********************";
     do

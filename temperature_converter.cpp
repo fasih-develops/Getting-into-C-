@@ -4,24 +4,23 @@ int main()
 {
     double temp;
     char unit;
-    cout<<"*************Temperature converter ************";
-    cout<<"\nF = Fahrenheit ";
-    cout<<"\nC = Celcius ";
-    cout<<"\nWhat you unit would you like to convert to :";
-    cin>> unit;
-    if(unit == 'f' || unit == 'F'){
-        cout<< "\nEnter the temperature in Celcius : ";
-        cin>> temp;
-        temp = (1.8*temp)+ 32.0;
-        cout<< "Here is temperature in F :" << temp << "F";
+    cout<<"Temperature converter";
+    cout<<"\n******************************";
+    cout<<"\nEnter the unit to which you want to convert the temperature";
+    cout<<"\nEnter 'f' for Fahrenheit ";
+    cout<<"\nEnter 'c' for Celcius ";
+    cin>>unit;
+    if (unit=='f'||unit=='F')
+    {
+        cout<<"Enter temperature in celcius: ";
+        cin>>temp;
+        cout<<"Here is the temperature in Celcius "<<temp*1.8 +32<<"F";
+    }else if(unit=='c'||unit=='C'){
+        cout<<"Enter temperature in fehrenheit: ";
+        cin>>temp;
+        cout<<"Here is the temperature in fahrenheit "<<(temp-32)/1.8<<"F";
+    }else{
+        cout<<"Invalid choice";
     }
-    else if(unit == 'c' || unit == 'C'){
-        cout<< "\nEnter the temperature in Fahrenheit : ";
-        cin>> temp;
-        temp = (temp-32.0)/1.8;
-        cout<< "Here is temperature in C :" << temp << "C";
-    }
-    else{
-        cout<< "invalid input";
-    }
+    cout<<"\n******************************";
 }

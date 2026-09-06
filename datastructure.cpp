@@ -98,9 +98,9 @@ int main()
 
     // Filling an array by taking inputs from the user
     string bmwss[5];
-    int size = sizeof(bmwss)/sizeof(bmwss[0]);
+    int sizeb = sizeof(bmwss)/sizeof(bmwss[0]);
 
-    for(int i=0;i<size;i++){
+    for(int i=0;i<sizeb;i++){
         cout<<"Enter your bmws M model: ";
         getline(cin,bmwss[i]);
     }
@@ -110,8 +110,8 @@ int main()
     }
 
     //Taking strings from the user and printing out the output without the space prob
-    string foods[5];
-    int sizef = sizeof(foods)/sizeof(foods[0]);
+    string foodss[5];
+    int sizef = sizeof(foodss)/sizeof(foodss[0]);
     for(int i = 0;i<sizef;i++){
         string temp;
         cout<<"Enter your favouite food #"<<i+1<<": ";
@@ -124,8 +124,8 @@ int main()
         }
     }
     cout<< "Here are the Your favouite foods";
-    for(int i =0; !foods[i].empty();i++){
-        cout<<'\n'<<foods[i];
+    for(int i =0; !foodss[i].empty();i++){
+        cout<<'\n'<<foodss[i];
     }
     
     // Introducing Two dimentional arrays 
@@ -144,6 +144,17 @@ int main()
         }
         cout<<"\n";
     }
+
+    string temp;
+    string x = "Chalo";
+    string y = "bhai";
+
+    temp = x;
+    x = y;
+    y = temp;
+    
+    
+    cout<<x<<'\n'<<y;
 }
 double gettotal(double prices[], int size){
     double total = 0;

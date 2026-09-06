@@ -113,6 +113,6 @@ int main()
     // & is used to access memory addresss called address of operator
 
     std::string bhai = "Bhaiyyah vastaganahuiyya! ";
-    std::cout<<&bhai;
+    std::cout<<"the mamory address of bhai string is "<<&bhai;
 
 }

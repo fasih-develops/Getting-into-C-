@@ -5,6 +5,7 @@ using namespace std;
 double gettotal(double prices[],int size);
 int searcharray(int array[],int sizej, int element);
 void sortarray(int numss[],int sizek);
+void swap(string &x, string &y);
 int main()
 {
     // Array is a data structure that can hold multiple values 
@@ -145,16 +146,13 @@ int main()
         cout<<"\n";
     }
 
-    string temp;
+
     string x = "Chalo";
     string y = "bhai";
+    swap(x,y);
 
-    temp = x;
-    x = y;
-    y = temp;
     
-    
-    cout<<x<<'\n'<<y;
+    cout<<"X : "<<&x<<endl<<"Y : "<<&y;
 }
 double gettotal(double prices[], int size){
     double total = 0;
@@ -183,4 +181,11 @@ void sortarray(int numss[],int sizek){
             }
         }
     }
+}
+void swap(string &x, string &y){
+    string temp = x;
+    x = y;
+    y = temp;
+    cout<<"X : "<<&x<<endl;
+    cout<<"Y : "<<&y<<endl;
 }

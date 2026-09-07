@@ -17,6 +17,7 @@ double square(double length);
 double cube(double length);
 void happy(string boi, int age);
 string concatstring(string string1, string string2);
+void printinfo(const int age2, const string name);
 
 int main()
 {
@@ -47,9 +48,11 @@ int main()
     string topping = "pepperoni";
     string topping2 = "mamamia";
     bakingpitza(topping,topping2);
-    return 0;
     
-
+    //Const parameter is effectively read only, code is more secure and conveys useful intent for pointers and references
+    int age2  = 23;
+    string name = "vastagana";
+    printinfo(age,name);
 }
 
 //ALL FUNCTIONS
@@ -75,4 +78,8 @@ void bakingpitza(std::string topping){
 }
 void bakingpitza(std::string topping, std::string topping2){
     cout << endl<<"Here is your "<<topping2 << " and "<< topping <<  " pizza";
+}
+void printinfo(const int age2, const string name){
+    cout<< "\nHere is your age "<< age2;
+    cout<< "\n Here is your name "<< name;
 }

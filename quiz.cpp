@@ -80,7 +80,7 @@ int main()
          "C. The sum of a rational and an irrational number is irrational.",
          "D. The difference of two irrational numbers is irrational."},
 
-        {"A. 29", "B. 45", "C. 57", "D. 69"},
+        {"A. 29", "B. 41", "C. 57", "D. 69"},
 
         {"A. 162", "B. 216", "C. 324", "D. 486"},
         
@@ -116,7 +116,7 @@ int main()
 
         {"A. Kilogram", "B. Meter", "C. Second", "D. Newton"},
 
-        {"A. 250 mm", "B. 2.50 mm", "C. 2500 mm", "D. 250. mm"},
+        {"A. 250 mm", "B. 2.50 mm", "C. 2.50 x 10^3 mm", "D. 250. mm"},
         {"A. Displacement", "B. Velocity", "C. Speed", "D. Acceleration"},
 
         {"A. 2 N", "B. 8 N", "C. 14 N", "D. 48 N"},
@@ -133,22 +133,24 @@ int main()
 
     };
 
-    int size = sizeof(questions) / sizeof(questions[0]);
+    int size2 = sizeof(questions) / sizeof(questions[0]);
 
-    int size2 = sizeof(options[0]) / sizeof(options[0][0]);
-
-    char answerkey[] = {'C', 'D', 'C', 'C', 'C', 'C', 'A','A', 'B', 'C', 'B', 'B', 'C', 'B', 'B','C', 'A', 'A', 'B', 'C', 'B', 'D', 'C','C', 'C', 'B', 'C', 'A', 'B', 'C'};
-
+    char answerkey[] = {
+    'C', 'D', 'B', 'C', 'C', 'B', 'C',
+    'A', 'B', 'C', 'C', 'B', 'C', 'B', 'B',
+    'C', 'C', 'A', 'B', 'C', 'B', 'D', 'C',
+    'C', 'C', 'B', 'C', 'A', 'B', 'C'
+    };
     char guess;
     int score = 0;
 
-    for (int i = 0; i < size; i++)
+    for (int i = 0; i < size2; i++)
     {
         cout << "\n**********************************";
         cout << '\n' << questions[i];
         cout << "\n**********************************";
 
-        for (int j = 0; j < size2; j++)
+        for (int j = 0; j < size; j++)
         {
             cout << "\n" << options[i][j];
         }

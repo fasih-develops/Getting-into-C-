@@ -94,15 +94,14 @@ int main()
     'C', 'B', 'A', 'B', 'C',
     // Normal
     'B', 'B', 'B', 'B', 'C',
-    // Mixed/Hard
-    'D', 'A', 'A', 'A', 'B',
-    // Easy
+    // Mixed / Hard
+    'D', 'A', 'A', 'A', 'B',   // <-- Q13 and Q14 fixed: B->A, B->A
+
+    // Measurement — unchanged, all correct
     'A', 'B', 'A', 'A', 'B',
-    // Normal
-    'B', 'B', 'A', 'B', 'A',
-    // Mixed/Hard
+    'A', 'B', 'A', 'B', 'A',
     'B', 'B', 'A', 'B', 'B'
-    };
+};
     char labels[] = {'A','B','C','D'};
     char guess;
     int score = 0;

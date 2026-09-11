@@ -1,10 +1,10 @@
       Luhn Algorithm 
  ***********************
  step1: divide the it in groups of 4 digits
- step2: double every second digit from right to left 
+ step2: double every first digit from left to right 
         if the doubled number is 2 digits split them.
  step3: add all single digit numbers to create a sum
- step4: add all odd digit numbers from left to right from the original number
+ step4: add all even positioned numbers from left to right from the original number
  step5: sum the results from step 2 and 3
  step6: if step 5 is divisible by 10 that # is valid
  
@@ -15,3 +15,15 @@
  73
 
 6011 1111 1111 1117
+6 1  1 1  1 1  1 1
+1 2 2  2 2  2 2  2 2 
+17
+
+
+4012888888881881
+
+6011 0009 9013 9424
+6 1  0 0  9 1  9 2  
+1 2 2   0 0   1 8 2   1 8 4
+29 
+6011000990139424 ⚡️

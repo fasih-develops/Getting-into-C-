@@ -112,11 +112,28 @@ int main()
 
     std::string bhai = "Bhaiyyah vastaganahuiyya! ";
     */
+    
+
+    // * asterisk is used for multiplication, pointer variable, pointer modification and as a dereference operator
+    // pointer variable is used to point to the address of a variable
+    // dereference operator is used to get the value stored at the address held by a pointer
+
+    int x = 3*5;
+
+    int q = 7;
+    int *p = &q;
+    cout<<p;
+
+    int o = 98;
+    int *po = &o;
+    *po = 100;
+    cout<<o;
+
+    int y = 8;
+    int*pq = &y;
+    cout<<'\n'<<*pq;
+
     string array[] = {"Helo1","Helo2","Helo3","Helo4","Helo5"};
-    string *pbhai = array[];
-    cout<<*pbhai;
-    string 
-
-    // * is called derefernce opertor
-
+    string (*pbhai)[5] = &array;
+    cout<<'\n'<<*pbhai;
 }

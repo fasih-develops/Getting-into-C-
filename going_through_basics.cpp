@@ -106,13 +106,17 @@ int main()
         cout<< "\n lets go "<< i;
     }
     
-    
-    */
    
     // a Memory address is a location in memory where data is stored
     // & is used to access memory addresss called address of operator
 
     std::string bhai = "Bhaiyyah vastaganahuiyya! ";
-    std::cout<<"the mamory address of bhai string is "<<&bhai;
+    */
+    string array[] = {"Helo1","Helo2","Helo3","Helo4","Helo5"};
+    string *pbhai = array[];
+    cout<<*pbhai;
+    string 
+
+    // * is called derefernce opertor
 
 }
